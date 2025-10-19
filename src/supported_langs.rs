@@ -723,7 +723,7 @@ pub static SUPPORTED_LANGUAGES: LazyLock<Vec<LangProfile>> = LazyLock::new(|| {
         LangProfile {
             name: "XML",
             alternate_names: &[],
-            extensions: vec!["xhtml", "xml"],
+            extensions: vec!["xhtml", "xml", "csproj", "config"],
             file_names: vec![],
             language: tree_sitter_xml::LANGUAGE_XML.into(),
             atomic_nodes: vec!["AttValue"],
