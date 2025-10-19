@@ -24,7 +24,7 @@ description = "A syntax-aware merge driver for Git"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-cc=">=1.1"
+cc = ">=1.1"
 
 [dependencies]
 tree-sitter = "0.25"
@@ -60,6 +60,7 @@ tree-sitter-cmake = "0.7.1"
 regex = "1.11.2"
 itertools = "0.14.0"
 tree-sitter-nix = "0.3.0"
+tree-sitter-nu = { git = "https://github.com/nushell/tree-sitter-nu.git" }
 typed-arena.workspace = true
 clap.workspace = true
 stderrlog.workspace = true
@@ -73,13 +74,13 @@ either = "1.15.0"
 rustc-hash = "2.1.1"
 diffy-imara = "0.3.2"
 nu-ansi-term = "0.50.1"
-oneshot = {version = "0.1.11", default-features = false, features = ["std"]}
+oneshot = { version = "0.1.11", default-features = false, features = ["std"] }
 tree-sitter-devicetree = "0.14.1"
 tree-sitter-systemverilog = "0.2.1"
 tree-sitter-make = "1.1.1"
 tree-sitter-starlark = "1.3.0"
 nonempty-collections = "1.0.1"
-tempfile = {version = "3", optional = true}
+tempfile = { version = "3", optional = true }
 thiserror = "2"
 
 # for transitive dependencies that incorrectly specify minimal required versions of their dependencies
@@ -88,7 +89,7 @@ cc = { version = ">=1.2.12", default-features = false, optional = true } # requi
 
 [dev-dependencies]
 caplog = "0.3.0"
-rstest = {version = "0.26.1", default-features = false}
+rstest = { version = "0.26.1", default-features = false }
 tempfile = "3"
 
 [features]
@@ -133,4 +134,3 @@ archive-suffix = ".tar.gz"
 [package.metadata.binstall.overrides.x86_64-pc-windows-gnu]
 pkg-fmt = "zip"
 archive-suffix = ".zip"
-

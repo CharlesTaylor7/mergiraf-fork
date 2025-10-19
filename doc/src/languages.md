@@ -24,6 +24,7 @@ Mergiraf currently supports the following programming languages:
 * Haskell (*.hs)
 * GNU Make (*.mk, Makefile, GNUmakefile)
 * CMake (*.cmake, CMakeLists.txt)
+* Nushell (*.nu)
 
 and the following declarative file formats:
 * JSON (*.json)
